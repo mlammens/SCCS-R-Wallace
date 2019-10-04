@@ -1,0 +1,204 @@
+---
+title: "Crash Course in R"
+author: "Matthew E. Aiello-Lammens"
+output:
+  html_document:
+    toc: yes
+---
+
+
+## Use a script file
+
+Let's all make a new directory to work in today. 
+
+Let's create a new script file in that directory.
+
+Scripts make it easier to repeat your work. You can also add comments using the pound sign.
+
+Short cut to execute commands and functions:
+
+Mac:
+[Command] + return
+
+Windows
+[Control] + return (RStudio)
+[Control] + r (R gui)
+
+
+### Setting your working directory
+
+```{r, eval=FALSE}
+setwd("[your dir name here]")
+```
+
+
+## R as a calculator
+
+```{r}
+5 + 3
+
+8^3
+
+6*3-1
+
+# Order of operations follows PEMDAS
+6*(3-1)
+```
+
+## Variables
+
+We can save things within our session as **variables**
+
+```{r}
+pop_1 <- 1200
+pop_2 <- 500
+
+pop_total <- pop_1 + pop_2
+
+pop_1 * 2
+
+# Etc.
+```
+
+### Challange
+
+I chagne pop_1
+
+```{r}
+pop_1 <- 2000
+```
+
+What is `pop_total` now?
+
+
+## Loading Data
+
+Best to use the full path to your data, but could also change into the directory you're data is in, then call it in there.
+
+
+```{r}
+fral_pres <- read.csv(file = "https://www.dropbox.com/s/x7s7fpu4bepj7xf/F_alnus_CompiledPres.csv?dl=1")
+```
+
+
+Let's have a look at these data
+
+```{r}
+head(fral_pres)
+
+tail(fral_pres)
+
+summary(fral_pres)
+
+names(fral_pres)
+
+str(fral_pres)
+```
+
+
+## Navigating data
+
+What if we wanted to look at specific row/column entries?
+
+```{r}
+fral_pres[1, 1]
+fral_pres[1, 2]
+```
+
+Let's get a specific row.
+
+```{r}
+fral_pres[3, ]
+```
+
+And a whole column
+
+```{r, results='hide'}
+fral_pres[ , 2 ]
+```
+
+Just part of the column
+
+```{r}
+fral_pres[1:10, 2 ]
+```
+
+
+Specific rows
+
+```{r}
+fral_pres[c(3, 5, 7), ]
+```
+
+How about rows that meet certain criteria?
+
+```{r, results='hide'}
+subset(fral_pres, FIELD_HERB == "Herbarium")
+```
+
+
+
+## Fixing or Cleaning Data
+
+Let's say we realized that we had a mistake in our data. 
+For example, one of `UNCERTAIN` values was recorded incorrectly. 
+How can we change this?
+
+```{r}
+fral_pres_fixed <- fral_pres
+fral_pres_fixed$UNCERTAIN[1]
+fral_pres_fixed$UNCERTAIN[1] <- 20
+fral_pres_fixed$UNCERTAIN[1]
+
+```
+
+
+## Subset the data
+
+Let's get only a subset of these data, selecting from the `data.frame` by columns.
+
+```{r}
+fral_pres_subset <- fral_pres[c("SPEC", "LONG", "LAT")]
+```
+
+Next, let's rename our columns so they are in the format used in Wallace.
+
+```{r}
+names(fral_pres_subset) 
+names(fral_pres_subset) <- c("name", "longitude", "latitude")
+```
+
+
+
+
+Let's now make a new file with the fixed data.
+
+```{r}
+write.csv(x = fral_pres_subset, file = "~/Dropbox/SCCS-Workshop/fral_pres.csv", row.names = FALSE)
+```
+
+
+## Simple calculations / built-in functions
+
+Some statistics of note.
+
+```{r}
+mean(fral_pres$LAT)
+max(fral_pres$LAT)
+min(fral_pres$LAT)
+median(fral_pres$LAT)
+```
+
+
+### Challenge
+
+Use indexing and the functions we just learned to determin the mean, min, and max latitude and longitude of all of the Herbarium specimens vs. the Field specimens.
+
+
+## Simple plots
+
+```{r}
+plot(x = fral_pres$LONG, y = fral_pres$LAT)
+```
+
+
