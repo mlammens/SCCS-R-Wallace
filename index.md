@@ -42,4 +42,8 @@ You do not need to know this information to effectively begin using *Wallace*. H
 * [Wallace homepage](https://wallaceecomod.github.io)
 * Link to [Wallace How-to Vignette](https://wallaceecomod.github.io/vignettes/wallace_vignette.html)
 
-## 
+## 'Beyone Wallace' Resources
+
+* [PDF file of Data Exploration and Cleaning Session](https://mlammens.github.io/SCCS-R-Wallace/docs/Workshop_cleaningdata_AMNH/ppt_AMNH_workshop.pdf)
+* [R script file](https://mlammens.github.io/SCCS-R-Wallace/docs/Workshop_cleaningdata_AMNH/workshop_AMNH.R) for data exploration and cleaning 
+* Dropbox link to necessary files (approximately 2 GB) - [https://www.dropbox.com/s/p1241h0gl1rkk22/Workshop_cleaningdata_AMNH.zip?dl=0](https://www.dropbox.com/s/p1241h0gl1rkk22/Workshop_cleaningdata_AMNH.zip?dl=0)
