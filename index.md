@@ -26,6 +26,13 @@ Species distribution modeling (SDM) is an important tool for conservation scient
 * **Time:** 9:00 AM to 12:00 Noon 
 * **Place:** AMNH, RGGS Lab, 5th floor 
 
+## Pre- and Post-Workshop Survey Links
+
+Please take the pre- and post-workshop surveys. They really help us!
+
+* [Pre-workshop survey](https://forms.gle/zJNznyCRqyK4ZK5h6)
+* [Post-workshop survey](https://forms.gle/UcrZzRM6s9iSseQj6)
+
 ## Background Materials
 
 You do not need to know this information to effectively begin using *Wallace*. However, a little R knowledge can go a long way.
