@@ -1,8 +1,8 @@
 ---
 layout: page
-title: SCCS-NY 2019 - Species Distribution Modeling for Conservation in R and Wallace
+title: SCCS-NY 2020 - Species Distribution Modeling for Conservation in R and Wallace
 tagline: A <i>Wallace</i> workshop
-description: Simple page for SCCS-NY 2019 Wallace workshop
+description: Simple page for SCCS-NY 2020 Wallace workshop
 ---
 
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -22,9 +22,9 @@ Species distribution modeling (SDM) is an important tool for conservation scient
 
 ## Logistics
 
-* **Date:** Friday, October 4, 2019
-* **Time:** 9:00 AM to 12:00 Noon 
-* **Place:** AMNH, RGGS Lab, 5th floor 
+* **Date:** Friday, October 9, 2020
+* **Time:** 2:30 PM to 4:00 PM 
+* **Place:** Zoom 
 
 ## Pre- and Post-Workshop Survey Links
 
@@ -33,7 +33,7 @@ Please take the pre- and post-workshop surveys. They really help us!
 * [Pre-workshop survey](https://forms.gle/zJNznyCRqyK4ZK5h6)
 * [Post-workshop survey](https://forms.gle/UcrZzRM6s9iSseQj6)
 
-## Background Materials
+## Background R Materials
 
 You do not need to know this information to effectively begin using *Wallace*. However, a little R knowledge can go a long way.
 
@@ -51,6 +51,6 @@ You do not need to know this information to effectively begin using *Wallace*. H
 
 ## 'Beyone Wallace' Resources
 
-* [PDF file of Data Exploration and Cleaning Session](https://mlammens.github.io/SCCS-R-Wallace/docs/Workshop_cleaningdata_AMNH/ppt_AMNH_workshop.pdf)
-* [R script file](https://mlammens.github.io/SCCS-R-Wallace/docs/Workshop_cleaningdata_AMNH/workshop_AMNH.R) for data exploration and cleaning 
-* Dropbox link to necessary files (approximately 2 GB) - [https://www.dropbox.com/s/p1241h0gl1rkk22/Workshop_cleaningdata_AMNH.zip?dl=0](https://www.dropbox.com/s/p1241h0gl1rkk22/Workshop_cleaningdata_AMNH.zip?dl=0)
+* [PDF slide deck covering Data Exploration and Cleaning](https://mlammens.github.io/SCCS-R-Wallace/docs/Workshop_cleaningdata_AMNH/ppt_AMNH_workshop.pdf)
+* [R script file on Data Exploration and Cleaning](https://mlammens.github.io/SCCS-R-Wallace/docs/Workshop_cleaningdata_AMNH/workshop_AMNH.R) for data exploration and cleaning 
+* Dropbox link to necessary files (WARNING: approximately 2 GB) - [https://www.dropbox.com/s/p1241h0gl1rkk22/Workshop_cleaningdata_AMNH.zip?dl=0](https://www.dropbox.com/s/p1241h0gl1rkk22/Workshop_cleaningdata_AMNH.zip?dl=0)
